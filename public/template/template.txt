@@ -1,0 +1,4 @@
+template = Flexor
+version = Lite (Dec 2015)
+url = https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+author = BootstrapMade.com
