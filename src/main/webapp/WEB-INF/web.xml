@@ -10,7 +10,7 @@
         <filter-class>ro.pippo.core.PippoFilter</filter-class>
         <init-param>
             <param-name>applicationClassName</param-name>
-            <param-value>io.andromeda.PippoApplication</param-value>
+            <param-value>io.andromeda.blueprint.website.PippoApplication</param-value>
         </init-param>
         <!--
         <init-param>

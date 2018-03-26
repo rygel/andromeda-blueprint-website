@@ -8,8 +8,8 @@
     <artifactId>andromeda-blueprint-website</artifactId>
     <version>0.0.1</version>
     <packaging>${packaging.type}</packaging>
-    <name>quickstart</name>
-    <description>A Pippo application</description>
+    <name>andromeda-blueprint-website</name>
+    <description>A Pippo application showing best practices as well as the use of the Andromeda extensions.</description>
 
     <licenses>
         <license>
@@ -33,11 +33,18 @@
     </repositories>
 
     <properties>
+        <andromeda.domain_name>blueprint.andromeda.io</andromeda.domain_name>
+        <andromeda.application_title>Andromeda Website Blueprint</andromeda.application_title>
+        <andromeda.info_email>info@blueprint.andromeda.io</andromeda.info_email>
+        <andromeda.last_update>27.03.2018</andromeda.last_update>
+        <andromeda.copyright_startyear>2017</andromeda.copyright_startyear>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <pippo.version>1.8.0</pippo.version>
-        <slf4j.version>1.7.7</slf4j.version>
-        <main.class>io.andromeda.PippoLauncher</main.class>
+        <fragments.version>0.0.20</fragments.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <main.class>io.andromeda.blueprint.website.PippoLauncher</main.class>
     </properties>
 
     <dependencies>
@@ -54,12 +61,34 @@
             <version>${pippo.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>ro.pippo</groupId>
+            <artifactId>pippo-undertow</artifactId>
+            <version>${pippo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ro.pippo</groupId>
+            <artifactId>pippo-session-cookie</artifactId>
+            <version>${pippo.version}</version>
+        </dependency>
+        <!-- /Pippo -->
+
         <!-- Logging -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.7</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
         </dependency>
+        <!-- /Logging -->
+
+        <!-- fragments -->
+        <dependency>
+            <groupId>io.andromeda</groupId>
+            <artifactId>fragments</artifactId>
+            <version>${fragments.version}</version>
+        </dependency>
+        <!-- /fragments -->
     </dependencies>
 
     <build>

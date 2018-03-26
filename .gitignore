@@ -23,3 +23,7 @@ hs_err_pid*
 /.idea/libraries
 /.idea/workspace.xml
 /.idea/markdown-navigator
+/.idea/sonarlint/
+/target/
+/.idea/markdown-navigator.xml
+/.idea/uiDesigner.xml
