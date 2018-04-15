@@ -39,11 +39,16 @@ public class PippoLauncher {
 
         LOGGER.info("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         LOGGER.info("Welcome to the webapp {} in version {}.", applicationName, applicationVersion);
-        LOGGER.info("Application title:           {}", pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_TITLE));
-        LOGGER.info("Application domain name:     {}", pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_DOMAIN_NAME));
-        LOGGER.info("Application info email:      {}", pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_EMAIL));
-        LOGGER.info("Application last update:     {}", pippo.getApplication().getPippoSettings().getRequiredString(LAST_UPDATE));
-        LOGGER.info("Application copyright start: {}", pippo.getApplication().getPippoSettings().getRequiredString(COPYRIGHT_STARTYEAR));
+        LOGGER.info("Application title:           {}",
+                pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_TITLE));
+        LOGGER.info("Application domain name:     {}",
+                pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_DOMAIN_NAME));
+        LOGGER.info("Application info email:      {}",
+                pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_EMAIL));
+        LOGGER.info("Application last update:     {}",
+                pippo.getApplication().getPippoSettings().getRequiredString(LAST_UPDATE));
+        LOGGER.info("Application copyright start: {}",
+                pippo.getApplication().getPippoSettings().getRequiredString(COPYRIGHT_STARTYEAR));
         Locale.setDefault(Locale.ENGLISH);
         LOGGER.info("Locale: " + Locale.getDefault());
         if (LOGGER.isInfoEnabled()) {

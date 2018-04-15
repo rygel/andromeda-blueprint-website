@@ -1,0 +1,292 @@
+{% extends "parent" %}
+
+{% block title %} Home {% endblock %}
+
+{% block active_home %} active {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<section id="intro">
+    <div class="jumbotron masthead">
+
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="camera_wrap camera_black_skin" id="camera_wrap_2">
+                        <div data-thumb="/template/assets/img/slides/camera/img1.jpg" data-src="/template/assets/img/slides/camera/img1.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                <h2>Twitter bootstrap</h2>
+                                <div class="hidden-phone">
+                                    <p>
+                                        Mei ad recteque rationibus, ex quaeque civibus eloquentiam vim. Solet cetero id nam. Ne eos nonumy voluptua, vis nobis euismod qualisque te, no nam debet oporteat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-thumb="/template/assets/img/slides/camera/img2.jpg" data-src="/template/assets/img/slides/camera/img2.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                <h2>Responsive layout</h2>
+                                <div class="hidden-phone">
+                                    <p>
+                                        Nam omnium salutandi ad, accusam indoctum ne mel, posse expetendis mea at. Luptatum antiopam pro ne. Eum at autem antiopam sadipscing, an his omnis splendide perfecto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-thumb="/template/assets/img/slides/camera/img3.jpg" data-src="/template/assets/img/slides/camera/img3.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                <h2>Metro style</h2>
+                                <div class="hidden-phone">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, dicam singulis in ius, eu timeam aperiam pri. His suas solum legimus eu, sea an duis habemus urbanitas. No sapientem consetetur sit an.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-thumb="/template/assets/img/slides/camera/img4.jpg" data-src="/template/assets/img/slides/camera/img4.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                <h2>Lot of features</h2>
+                                <div class="hidden-phone">
+                                    <p>
+                                        Sit et laudem aperiri argumentum. Vim laboramus instructior eu, minim aliquid accusata ut est, sea ut ridens causae quaerendum. Ea vide posidonium usu qui ad pertinax.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #camera_wrap_1 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="tagline">
+                <div class="row">
+                    <div class="span6">
+                        <div class="tagline_text">
+                            <h2>Scaffold will <span class="text-success">pimp up</span> your website quickly</h2>
+                            <div class="tag_list">
+                                <ul>
+                                    <li><span><i class="icon-fire"></i> Hottest price on the net</span></li>
+                                    <li><span><i class="icon-gift"></i> More than expected</span></li>
+                                    <li><span><i class="icon-plane"></i> Flying out of the crowd</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span6">
+                        <div class="btn-toolbar cta">
+                            <a class="btn btn-large btn-danger" href="#"><i class="m-icon-big-swapright m-icon-white"></i> Our pricing</a>
+                            <a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i> Download now</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- end tagline -->
+
+<section id="maincontent">
+    <div class="container">
+
+        <div class="row">
+            <div class="span3">
+                <h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Main features</h3>
+                <p>Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Praesent eleifend sodales felis, in congue purus scelerisque eget.</p>
+            </div>
+            <div class="span3">
+                <div class="well well-primary box">
+                    <img src="/template/assets/img/icons/box-1-white.png" alt="" />
+                    <h3>Responsive bootstrap</h3>
+                    <p>
+                        Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri. Mel virtute efficiantur ne zril.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="well well-success box">
+                    <img src="/template/assets/img/icons/box-2-white.png" alt="" />
+                    <h3>With metro taste</h3>
+                    <p>
+                        Ad sit option intellegat, unum populo comprehensam ut sed. Copiosae corrumpit qui ex, duo nullam feugait qualisque at an dicit saperet.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="well well-warning box">
+                    <img src="/template/assets/img/icons/box-3-white.png" alt="" />
+                    <h3>Well documented</h3>
+                    <p>
+                        Ne vix clita integre expetenda, eos cetero numquam no, in sea omnes detracto. Ne iriure habemus maiestatis mei. Postea euripidis contentiones.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="bottom">
+    <div class="container">
+
+        <!-- divider -->
+        <div class="row">
+            <div class="span12">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <!-- end divider -->
+
+
+        <div class="row">
+            <div class="span12">
+                <h3><a class="btn btn-large btn-success" href="#"><i class="m-icon-big-swapdown m-icon-white"></i></a> Recent works</h3>
+
+                <div id="latest-work" class="carousel btleft">
+                    <div class="carousel-wrapper">
+
+                        <ul class="portfolio-home da-thumbs">
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work1.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work2.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work3.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work4.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work5.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work6.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work7.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <div class="image-wrapp">
+                                        <img src="/template/assets/img/dummies/work8.jpg" alt="Portfolio name" title="" />
+                                        <article class="da-animate da-slideFromRight" style="display: block;">
+                                            <a class="link_post" href="portfolio-detail.html"><img src="/template/assets/img/icons/link_post_icon.png" alt="" /></a>
+                                            <span><a class="zoom" data-pretty="prettyPhoto" href="/template/assets/img/dummies/big1.jpg"><img src="/template/assets/img/icons/zoom_icon.png" alt="Portfolio name" title="Portfolio name" /></a></span>
+                                        </article>
+                                    </div>
+                                    <div class="caption">
+                                        <h5>Portfolio name</h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

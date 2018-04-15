@@ -3,11 +3,13 @@ package io.andromeda.blueprint.website;
 import io.andromeda.fragments.Configuration;
 import io.andromeda.fragments.Fragments;
 import io.andromeda.fragments.Utilities;
+import io.andromeda.fragments.types.RouteType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ro.pippo.core.Application;
 import ro.pippo.core.PippoSettings;
 import ro.pippo.core.RuntimeMode;
+import ro.pippo.core.route.TrailingSlashHandler;
 
 import java.nio.file.Paths;
 import java.util.Calendar;
@@ -38,10 +40,12 @@ public class PippoApplication extends Application {
 
         getRouter().ignorePaths("/favicon.ico");
 
+        // To have trailing slashes redirected to the non-slash version.
+        ANY("/.*", new TrailingSlashHandler(false));
+
         // send 'Hello World' as response
         GET("/", routeContext -> {
-            String version = settings.getRequiredString("application.version");
-            routeContext.send("Hello World!" + version);
+            routeContext.render("index", globalContext);
         });
 
         // send a template as response
@@ -71,6 +75,7 @@ public class PippoApplication extends Application {
         blogConfiguration.setDomain(domainName);
         blogConfiguration.setProtocol(PROTOCOL);
         blogConfiguration.setRegisterOverviewRoute(true);
+        blogConfiguration.setRouteType(RouteType.BLOG);
 
         Configuration productsConfiguration  = new Configuration("products", "/products",
                 Paths.get(currentPath + "/data/fragments/products"), "products_overview", "products_post");

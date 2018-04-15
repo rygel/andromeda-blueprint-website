@@ -1,4 +1,4 @@
-template = Flexor
-version = Lite (Dec 2015)
-url = https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+template = Scaffold
+version = Free (downloaded 2018) 
+url = https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
 author = BootstrapMade.com
