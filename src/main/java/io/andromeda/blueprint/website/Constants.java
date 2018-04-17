@@ -1,7 +1,7 @@
 package io.andromeda.blueprint.website;
 
 /**
- * Class holding application wide string constants.
+ * Class holding application wide string constants. The real information is loaded from the pom.
  *
  * @author Alexander Brandt
  */

@@ -115,6 +115,19 @@
                                     <li><a href="post_right_sidebar.html">Post right sidebar</a></li>
                                 </ul>
                             </li>
+
+                            <li class="info {% block active_products %}{% endblock %}">
+                                <a href="/blog"><i class="icon-list-alt icon-white"></i> Products</a>
+                            </li>
+                            <li class="info {% block active_services %}{% endblock %}">
+                                <a href="/blog"><i class="icon-book icon-white"></i> Services</a>
+                            </li>
+                            <li class="info {% block active_blog %}{% endblock %}">
+                                <a href="/blog"><i class="icon-bullhorn icon-white"></i> Blog</a>
+                            </li>
+                            <li class="inverse {% block active_about %}{% endblock %}">
+                                <a href="/about"><i class="icon-info-sign icon-white"></i> About</a>
+                            </li>
                             <li class="inverse {% block active_contact %}{% endblock %}">
                                 <a href="/contact"><i class="icon-envelope icon-white"></i> Contact</a>
                             </li>
@@ -146,7 +159,7 @@
 
                     <address>
                         <strong>Contact us</strong><br>
-                        <a href="mailto:#">hello@websitename.com</a>
+                        <a href="mailto:{{ info_email | raw}}">{{ info_email | raw }}</a>
                     </address>
                 </div>
             </div>
@@ -159,7 +172,7 @@
                         <li><a href="#">Creative process</a></li>
                         <li><a href="#">Case study</a></li>
                         <li class="nav-header">Quick links</li>
-                        <li><a href="/imprint">Imprint</a></li>
+                        <li><a href="/legal_disclosure">Legal Disclosure</a></li>
                         <li><a href="/privacy_policy">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -195,7 +208,7 @@
         <div class="container">
             <div class="row">
                 <div class="span6">
-                    <p>&copy; {{apptitle}} - All right reserved</p>
+                    <p>&copy; {{ copyrightdate }} <a href="https://github.com/rygel/andromeda-blueprint-website">{{apptitle}}</a> ({{ appver }} from {{ last_update }}) - All right reserved</p>
                 </div>
                 <div class="span6">
                     <div class="pull-right">

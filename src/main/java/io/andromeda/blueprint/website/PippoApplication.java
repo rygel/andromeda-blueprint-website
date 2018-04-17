@@ -4,6 +4,8 @@ import io.andromeda.fragments.Configuration;
 import io.andromeda.fragments.Fragments;
 import io.andromeda.fragments.Utilities;
 import io.andromeda.fragments.types.RouteType;
+import io.andromeda.pippo.routes.ContactRoute;
+import io.andromeda.pippo.routes.ContactRouteConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ro.pippo.core.Application;
@@ -48,20 +50,12 @@ public class PippoApplication extends Application {
             routeContext.render("index", globalContext);
         });
 
-        // send a template as response
-        GET("/template", routeContext -> {
-            String message;
-
-            String lang = routeContext.getParameter("lang").toString();
-            if (lang == null) {
-                message = getMessages().get("pippo.greeting", routeContext);
-            } else {
-                message = getMessages().get("pippo.greeting", lang);
-            }
-
-            routeContext.setLocal("greeting", message);
-            routeContext.render("hello");
-        });
+        ContactRouteConfiguration contactConfiguration = new ContactRouteConfiguration("/contact", "contact",
+                "Contact", "Andromeda Website Blueprint Contact Form",
+                "info@blueprint.andromeda.io", "Andromeda Website Blueprint",
+                "info@blueprint.andromeda.io");
+        contactConfiguration.setHasSubject(true);
+        addRouteGroup(new ContactRoute(contactConfiguration, globalContext));
 
         String currentPath = System.getProperty("user.dir");
         Configuration rootConfiguration  = new Configuration("root", "/",
@@ -102,7 +96,7 @@ public class PippoApplication extends Application {
         context.put("apptitle", settings.getRequiredString(APPLICATION_TITLE));
         context.put("domain_name", settings.getRequiredString(APPLICATION_DOMAIN_NAME));
         context.put("appver", this.getApplicationVersion());
-        context.put("email", Utilities.obfuscate(settings.getRequiredString(APPLICATION_EMAIL)));
+        context.put("info_email", Utilities.obfuscate(settings.getRequiredString(APPLICATION_EMAIL)));
         context.put("copyrightdate", getCopyrightDate());
         context.put("last_update", settings.getRequiredString(LAST_UPDATE));
         context.put("runtime_mode", RuntimeMode.getCurrent().toString());

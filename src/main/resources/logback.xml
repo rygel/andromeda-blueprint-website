@@ -22,7 +22,7 @@
         </encoder>
     </appender>
 
-    <logger name="io.undertow" level="INFO"/>
+    <logger name="io.undertow" level="WARNING"/>
 
 
     <root level="debug">

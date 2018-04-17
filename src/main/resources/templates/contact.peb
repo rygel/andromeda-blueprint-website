@@ -1,0 +1,100 @@
+{% extends "parent" %}
+
+{% block title %} Contact {% endblock %}
+
+{% block active_contact %} active {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<!-- Subhead
+================================================== -->
+<section id="subintro">
+    <div class="jumbotron subhead" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <h3><i class="m-icon-big-swapright m-icon-white"></i> Contact us</h3>
+                    <p>Disputationi comprehensam nam ut eam id accusata explicari minim splendide duo ea dicant.</p>
+                </div>
+                <div class="span4">
+                    <div class="input-append">
+                        <form class="form-search">
+                            <input type="text" class="input-medium search-query">
+                            <button type="submit" class="btn btn-inverse">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <aside>
+                    <div class="widget">
+                        <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Get in touch with us</h4>
+                        <ul>
+                            <li><label><strong>Phone : </strong></label>
+                                <p>+808 878 92 0r +808 878 91</p>
+                            </li>
+                            <li><label><strong>Email : </strong></label>
+                                <p>{{ info_email | raw}}</p>
+                            </li>
+                            <li><label><strong>Adress : </strong></label>
+                                <p>Tinggi sekali Tower Jl. Kemacetan timur No.13 Jakarta selatan</p>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="span8">
+                <div class="well">
+                    <div id="google-map" data-latitude="40.713417" data-longitude="-74.0092125"></div>
+                </div>
+                <div class="spacer30"></div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="row">
+                        <div class="span4 form-group">
+                            <input type="text" name="name" class="input-block-level" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+
+                        <div class="span4 form-group">
+                            <input type="email" class="input-block-level" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span8 form-group">
+                            <input type="text" class="input-block-level" name="phone" id="phone" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter your phone number" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span8 form-group">
+                            <input type="text" class="input-block-level" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span8 form-group">
+                            <textarea class="input-block-level" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                            <div style="text-align: center;">
+                                <button class="btn btn-medium btn-success" type="submit">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+{% endblock %}

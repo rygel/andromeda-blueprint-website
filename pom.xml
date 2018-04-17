@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.andromeda</groupId>
     <artifactId>andromeda-blueprint-website</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>${packaging.type}</packaging>
     <name>andromeda-blueprint-website</name>
     <description>A Pippo application showing best practices as well as the use of the Andromeda extensions.</description>
@@ -36,13 +36,14 @@
         <andromeda.domain_name>blueprint.andromeda.io</andromeda.domain_name>
         <andromeda.application_title>Andromeda Website Blueprint</andromeda.application_title>
         <andromeda.info_email>info@blueprint.andromeda.io</andromeda.info_email>
-        <andromeda.last_update>27.03.2018</andromeda.last_update>
-        <andromeda.copyright_startyear>2017</andromeda.copyright_startyear>
+        <andromeda.last_update>17.04.2018</andromeda.last_update>
+        <andromeda.copyright_startyear>2018</andromeda.copyright_startyear>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <pippo.version>1.8.0</pippo.version>
         <fragments.version>0.0.20</fragments.version>
+        <pippo-contact-route.version>1.0.3</pippo-contact-route.version>
         <slf4j.version>1.7.25</slf4j.version>
         <main.class>io.andromeda.blueprint.website.PippoLauncher</main.class>
     </properties>
@@ -89,6 +90,14 @@
             <version>${fragments.version}</version>
         </dependency>
         <!-- /fragments -->
+
+        <!-- contact route -->
+        <dependency>
+            <groupId>io.andromeda.pippo</groupId>
+            <artifactId>pippo-contact-route</artifactId>
+            <version>${pippo-contact-route.version}</version>
+        </dependency>
+        <!-- /contact route -->
     </dependencies>
 
     <build>
@@ -156,17 +165,43 @@
     <profiles>
         <profile>
             <id>standalone</id>
-
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-
             <properties>
                 <packaging.type>jar</packaging.type>
             </properties>
-
+            <dependencies>
+                <dependency>
+                    <groupId>ro.pippo</groupId>
+                    <artifactId>pippo-jetty</artifactId>
+                    <version>0.9.1</version>
+                </dependency>
+            </dependencies>
             <build>
                 <plugins>
+                    <plugin>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>2.3</version>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>
+                                    src/main/assembly/assembly.xml
+                                </descriptor>
+                            </descriptors>
+                            <appendAssemblyId>false</appendAssemblyId>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>make-assembly</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>attached</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jar-plugin</artifactId>
@@ -181,37 +216,11 @@
                             </archive>
                         </configuration>
                     </plugin>
-
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.4.0</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>${main.class}</mainClass>
-                        </configuration>
-                    </plugin>
                 </plugins>
             </build>
-
-            <dependencies>
-                <dependency>
-                    <groupId>ro.pippo</groupId>
-                    <artifactId>pippo-jetty</artifactId>
-                    <version>${pippo.version}</version>
-                </dependency>
-            </dependencies>
         </profile>
-
         <profile>
             <id>war</id>
-
             <properties>
                 <packaging.type>war</packaging.type>
             </properties>

@@ -1,0 +1,44 @@
+{% extends "parent" %}
+
+{% block title %} {{ fragment.title }} {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- Subhead
+  ================================================== -->
+    <section id="subintro">
+        <div class="jumbotron subhead" id="overview">
+            <div class="container">
+                <div class="row">
+                    <div class="span8">
+                        <h3><i class="m-icon-big-swapright m-icon-white"></i> {{ fragment.title }}</h3>
+                        <p>{{ fragment.frontMAtter.subtitle }}</p>
+                    </div>
+                    <div class="span4">
+                        <div class="input-append">
+                            <form class="form-search">
+                                <input type="text" class="input-medium search-query">
+                                <button type="submit" class="btn btn-inverse">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="maincontent">
+        <div class="container">
+            <div class="row">
+                {{ fragment.content | raw }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block js %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+{% endblock %}
