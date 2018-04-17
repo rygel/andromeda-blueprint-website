@@ -13,39 +13,39 @@ It uses the Open Source template [Flexor](https://bootstrapmade.com/flexor-free-
 The following list describes the features of Pippo, as well as the Andromeda extensions, which are used in this application.
 
 ### General
-[x] Example [SLF4J](https://www.slf4j.org/) and [Logback](https://logback.qos.ch/) configuration. It uses the ConsoleAppender as well as the RollingFileAppender together with a TimeBasedRollingPolicy set to a maximum history of 30 days.
-[x] Logging and information best practices. This means to write important configuration settings into the logfile directly after start-up of the application as well as before normally shutdown.
+- [x] Example [SLF4J](https://www.slf4j.org/) and [Logback](https://logback.qos.ch/) configuration. It uses the ConsoleAppender as well as the RollingFileAppender together with a TimeBasedRollingPolicy set to a maximum history of 30 days.
+- [x] Logging and information best practices. This means to write important configuration settings into the logfile directly after start-up of the application as well as before normally shutdown.
 
 ### Pippo
-[x] Use of [PippoSettings](http://www.pippo.ro/doc/settings.html). All major constants are set via the pom and filtered into PippoSettings.
-[x] Use of [Pebble Templates](http://www.pippo.ro/doc/templates/pebble.html). All HTML is templated via Pebble using template inheritance.
-[x] Use of [Sessions](http://www.pippo.ro/doc/session.html). Sessions are handled for the email contact form. This is used to present an unfinished email, if an error occurs to just that user.
-[ ] I18N
-[ ] Upload
-[ ] Flash
-[ ] Security (Pac4J)
+- [x] Use of [PippoSettings](http://www.pippo.ro/doc/settings.html). All major constants are set via the pom and filtered into PippoSettings.
+- [x] Use of [Pebble Templates](http://www.pippo.ro/doc/templates/pebble.html). All HTML is templated via Pebble using template inheritance.
+- [x] Use of [Sessions](http://www.pippo.ro/doc/session.html). Sessions are handled for the email contact form. This is used to present an unfinished email, if an error occurs to just that user.
+- [ ] I18N
+- [ ] Upload
+- [ ] Flash
+- [ ] Security (Pac4J)
 
 ### Andromeda
 
 #### Fragments
-[x] Using fragments for static pages on root, e.g. for /privacy_policy and /legal_disclosure .
-[ ] Blog
-[ ] Articles (Products and Services)
-[ ] I18N
-[ ] Dynamic context
-[ ] Full-text search via Lucene
-[ ] Database
+- [x] Using fragments for static pages on root, e.g. for /privacy_policy and /legal_disclosure .
+- [ ] Blog
+- [ ] Articles (Products and Services)
+- [ ] I18N
+- [ ] Dynamic context
+- [ ] Full-text search via Lucene
+- [ ] Database
 
 #### Pippo Contact Route
-[ ] Email sending. Due to the sensitivity of the matter: Bring your own config! Also, never check your mail configuration into public git!
+- [ ] Email sending. Due to the sensitivity of the matter: Bring your own config! Also, never check your mail configuration into public git!
 
 #### Pippo Shariff Backend
-[ ] Use the pippo [shariff backend](https://github.com/heiseonline/shariff)
+- [ ] Use the pippo [shariff backend](https://github.com/heiseonline/shariff)
 
 #### Andromeda Tools
 
 ##### Calendar
-[ ] Filling a local calendar via Google Calendar. Bring your own Calendar.
+- [ ] Filling a local calendar via Google Calendar. Bring your own Calendar.
 
 ##### Downloader
-[ ] Used to download a copy of the aforementioned calendar.
+- [ ] Used to download a copy of the aforementioned calendar.
