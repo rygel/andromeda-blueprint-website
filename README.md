@@ -13,7 +13,7 @@ It uses the Open Source template [Flexor](https://bootstrapmade.com/flexor-free-
 The following list describes the features of Pippo, as well as the Andromeda extensions, which are used in this application.
 
 ### General
-- [x] Example [SLF4J](https://www.slf4j.org/) and [Logback](https://logback.qos.ch/) configuration. It uses the ConsoleAppender as well as the RollingFileAppender together with a TimeBasedRollingPolicy set to a maximum history of 30 days.
+- [x] Example [SLF4J](https://www.slf4j.org/) and [Logback](https://logback.qos.ch/) configuration. It uses the ConsoleAppender as well as the [RollingFileAppender](https://logback.qos.ch/manual/appenders.html) together with a TimeBasedRollingPolicy set to a maximum history of 30 days.
 - [x] Logging and information best practices. This means to write important configuration settings into the logfile directly after start-up of the application as well as before normally shutdown.
 
 ### Pippo
@@ -30,7 +30,13 @@ The following list describes the features of Pippo, as well as the Andromeda ext
 #### Fragments
 - [x] Using fragments for static pages on root, e.g. for /privacy_policy and /legal_disclosure .
 - [ ] Blog
+    - [ ] Categories
+    - [ ] Tags
+    - [ ] Database
 - [ ] Articles (Products and Services)
+    - [ ] Categories
+    - [ ] Tags
+    - [ ] Database
 - [ ] I18N
 - [ ] Dynamic context
 - [ ] Full-text search via Lucene
@@ -49,3 +55,9 @@ The following list describes the features of Pippo, as well as the Andromeda ext
 
 ##### Downloader
 - [ ] Used to download a copy of the aforementioned calendar.
+
+## How to use
+- Clone this repository.
+- Build with Maven.
+- Start io.andromeda.blueprint.website.PippoLauncher.
+- Go to http://localhost:8338

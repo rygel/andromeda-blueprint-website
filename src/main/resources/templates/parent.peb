@@ -60,18 +60,9 @@
                             <li class="dropdown primary">
                                 <a href="#"><i class="icon-star icon-white"></i> Features</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="overview.html">Overview</a></li>
-                                    <li><a href="scaffolding.html">Scaffolding</a></li>
-                                    <li><a href="base-css.html">Base CSS</a></li>
-                                    <li><a href="components.html">Components</a></li>
-                                    <li><a href="javascript.html">Javascripts</a></li>
-                                    <li class="dropdown"><a href="#">3rd level</a>
-                                        <ul class="dropdown-menu sub-menu">
-                                            <li><a href="#">Example menu</a></li>
-                                            <li><a href="#">Example menu</a></li>
-                                            <li><a href="#">Example menu</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="/upload">Upload (Coming soon)</a></li>
+                                    <li><a href="/flash">Flash (Coming soon)</a></li>
+                                    <li><a href="/pac4j">PAC4J (Coming soon)</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown danger">
@@ -106,20 +97,11 @@
                                     <li><a href="portfolio-detail.html">Portfolio detail</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown info">
-                                <a href="#"><i class="icon-bullhorn icon-white"></i> Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="blog_left_sidebar.html">Blog left sidebar</a></li>
-                                    <li><a href="blog_right_sidebar.html">Blog right sidebar</a></li>
-                                    <li><a href="post_left_sidebar.html">Post left sidebar</a></li>
-                                    <li><a href="post_right_sidebar.html">Post right sidebar</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="info {% block active_products %}{% endblock %}">
+                            <li class="danger {% block active_products %}{% endblock %}">
                                 <a href="/blog"><i class="icon-list-alt icon-white"></i> Products</a>
                             </li>
-                            <li class="info {% block active_services %}{% endblock %}">
+                            <li class="danger {% block active_services %}{% endblock %}">
                                 <a href="/blog"><i class="icon-book icon-white"></i> Services</a>
                             </li>
                             <li class="info {% block active_blog %}{% endblock %}">

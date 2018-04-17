@@ -40,5 +40,5 @@
 {% endblock %}
 
 {% block js %}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
 {% endblock %}
