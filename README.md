@@ -20,6 +20,7 @@ The following list describes the features of Pippo, as well as the Andromeda ext
 - [x] Use of [PippoSettings](http://www.pippo.ro/doc/settings.html). All major constants are set via the pom and filtered into PippoSettings.
 - [x] Use of [Pebble Templates](http://www.pippo.ro/doc/templates/pebble.html). All HTML is templated via Pebble using template inheritance.
 - [x] Use of [Sessions](http://www.pippo.ro/doc/session.html). Sessions are handled for the email contact form. This is used to present an unfinished email, if an error occurs to just that user.
+- [ ] CSRF
 - [ ] I18N
 - [ ] Upload
 - [ ] Flash
