@@ -42,7 +42,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <pippo.version>1.8.0</pippo.version>
-        <fragments.version>0.0.20</fragments.version>
+        <fragments.version>0.0.21</fragments.version>
         <pippo-contact-route.version>1.0.3</pippo-contact-route.version>
         <slf4j.version>1.7.25</slf4j.version>
         <main.class>io.andromeda.blueprint.website.PippoLauncher</main.class>

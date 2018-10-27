@@ -113,7 +113,7 @@
                     <img src="/template/assets/img/icons/box-1-white.png" alt="" />
                     <h3>Pippo Micro Framework</h3>
                     <p>
-                        Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri. Mel virtute efficiantur ne zril.
+                        A sinatra-like Micro Web Framework for Java. It is lightweight, modular and powerful.
                     </p>
                     <a href="https://github.com/pippo-java/pippo">Read more</a>
                 </div>
@@ -123,7 +123,7 @@
                     <img src="/template/assets/img/icons/box-2-white.png" alt="" />
                     <h3>Fragments Blog and Article library</h3>
                     <p>
-                        Ad sit option intellegat, unum populo comprehensam ut sed. Copiosae corrumpit qui ex, duo nullam feugait qualisque at an dicit saperet.
+                        A library to handle a collection of articles like a list of products or a blog.
                     </p>
                     <a href="https://github.com/rygel/fragments">Read more</a>
                 </div>
@@ -131,9 +131,9 @@
             <div class="span3">
                 <div class="well well-warning box">
                     <img src="/template/assets/img/icons/box-3-white.png" alt="" />
-                    <h3>Andromeda Tools</h3>
+                    <h3>Andromeda Tools<br/><br/></h3>
                     <p>
-                        Ne vix clita integre expetenda, eos cetero numquam no, in sea omnes detracto. Ne iriure habemus maiestatis mei. Postea euripidis contentiones.
+                        Additional tools, like easy ical support, which enable powerful web applications.
                     </p>
                     <a href="https://github.com/rygel/andromeda-tools">Read more</a>
                 </div>

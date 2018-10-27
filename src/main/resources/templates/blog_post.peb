@@ -1,0 +1,185 @@
+{% extends "parent" %}
+
+{% block title %} Blog {% endblock %}
+
+{% block active_blog %} active {% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<!-- Subhead
+================================================== -->
+<section id="subintro">
+    <div class="jumbotron subhead" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <h3><i class="m-icon-big-swapright m-icon-white"></i> {{fragment.title}}</h3>
+                    <p>Disputationi comprehensam nam ut eam id accusata explicari minim splendide duo ea dicant.</p>
+                </div>
+                <div class="span4">
+                    <div class="input-append">
+                        <form class="form-search">
+                            <input type="text" class="input-medium search-query">
+                            <button type="submit" class="btn btn-inverse">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+
+            <div class="span8">
+
+                <!-- start article full post -->
+                <article class="blog-post">
+                    <div class="tooltip-demo headline">
+                        <h4>{{fragment.title}}</h4>
+                    </div>
+                    <div class="clearfix"></div>
+                    <img src="/template/assets/img/dummies/blog1.jpg" alt="" />
+                    <ul class="post-meta">
+                        <li class="first"><i class="icon-user"></i> <span><a href="#">{{fragment.frontMatter.author}}</a></span></li>
+                        <li><i class="icon-list-alt"></i> <span><a href="#">{{fragment.frontMatter.categories}}</a></span></li>
+                        <li class="last"><i class="icon-tags"></i> <span><a href="#">{{fragment.frontMatter.tags}}</a>, <a href="#">Blog</a>, <a href="#">Web page</a>, <a href="#">Clean</a></span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div style="text-align: justify-all">
+                        {{ fragment.content | raw }}
+                    </div>
+                </article>
+            </div>
+
+            <div class="span4">
+                <aside>
+                    <div class="widget">
+                        <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;About us</h4>
+                        <img src="/template/assets/img/avatar.png" class="alignleft" alt="" />
+                        <h5>{{fragment.frontMatter.author}}</h5>
+                        <p>
+                            Donec ullamcorper nulla non metus auctor fringilla commodo luctus
+                        </p><a href="#">Profile detail..</a>
+                    </div>
+                    <div class="widget">
+                        <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Categories</h4>
+                        <ul>
+                            <li><a href="#">Web design (24)</a></li>
+                            <li><a href="#">Bloging (11)</a></li>
+                            <li><a href="#">Graphic design ((10)</a></li>
+                            <li><a href="#">Photoshop (25)</a></li>
+                            <li><a href="#">Ilustrator (12)</a></li>
+                            <li><a href="#">Internet marketing (10)</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="widget">
+                        <ul id="myTab" class="nav nav-tabs">
+                            <li class="active"><a href="#recent" data-toggle="tab">Latest</a></li>
+                            <li><a href="#popular" data-toggle="tab">Popular</a></li>
+                            <li><a href="#comment" data-toggle="tab">Comment</a></li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade in active" id="recent">
+                                <ul class="recent">
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img1.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Adhuc disputando</a></h6>
+                                        <p>
+                                            At vero eos et accusam et justo duo dolores et eabum.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img2.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Duo te enim solum</a></h6>
+                                        <p>
+                                            Ei viris latine ullamcorper sed vim ex omnes.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img3.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Choro scriptorem</a></h6>
+                                        <p>
+                                            Fugit choro scriptorem eam at, nusquam consetetur ex.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="popular">
+                                <ul class="recent">
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img3.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Choro scriptorem</a></h6>
+                                        <p>
+                                            Fugit choro scriptorem eam at, nusquam consetetur ex.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img1.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Adhuc disputando</a></h6>
+                                        <p>
+                                            At vero eos et accusam et justo duo dolores et eabum.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/dummies/80x80/img2.jpg" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Duo te enim solum</a></h6>
+                                        <p>
+                                            Ei viris latine ullamcorper sed vim ex omnes.
+                                        </p>
+                                        <a href="#">Read more..</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="comment">
+                                <ul class="recent">
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/icons/quote.png" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Abbin noer</a></h6>
+                                        <p>
+                                            Mel meis tibique et, eam adhuc omnesque disputando ad prompta.
+                                        </p>
+                                        <span>Post :14/12/2012</span>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/icons/quote.png" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Dexer read</a></h6>
+                                        <p>
+                                            Mel meis tibique et, eam adhuc omnesque disputando.
+                                        </p>
+                                        <span>Post :11/12/2012</span>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/template/assets/img/icons/quote.png" class="alignleft" alt="" /></a>
+                                        <h6><a href="#">Alphon neyah</a></h6>
+                                        <p>
+                                            Ei viris latine ullamcorper sed. Vim ex omnes constituam.
+                                        </p>
+                                        <span>Post :05/12/2012</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

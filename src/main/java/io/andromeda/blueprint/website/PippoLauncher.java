@@ -39,6 +39,7 @@ public class PippoLauncher {
 
         LOGGER.info("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         LOGGER.info("Welcome to the webapp {} in version {}.", applicationName, applicationVersion);
+        LOGGER.info("Running on Java version {}.", System.getProperty("java.version"));
         LOGGER.info("Application title:           {}",
                 pippo.getApplication().getPippoSettings().getRequiredString(APPLICATION_TITLE));
         LOGGER.info("Application domain name:     {}",

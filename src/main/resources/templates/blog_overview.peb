@@ -2,7 +2,7 @@
 
 {% block title %} Blog {% endblock %}
 
-{% block active_contact %} active {% endblock %}
+{% block active_blog %} active {% endblock %}
 
 {% block css %}
 
@@ -37,6 +37,31 @@
         <div class="row">
 
             <div class="span8">
+                {% for item in fragments %}
+                <article class="blog-post">
+                    <div class="tooltip-demo headline">
+                        <h4><a href="{{item.url}}">{{item.frontMatter.title}}</a></h4>
+                        <span class="comment"><a href="#" rel="tooltip" data-placement="top" title="3 Comments">3 comments</a></span>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            <a href="#"><img src="/template/assets/img/dummies/blog1.jpg" alt="" /></a>
+                        </div>
+                        <div class="span6">
+                            <ul class="post-meta">
+                                <li class="first"><i class="icon-user"></i> <span><a href="#">{{item.frontMatter.author}}</a></span></li>
+                                <li><i class="icon-list-alt"></i> <span><a href="#">{{item.frontMatter.categories}}</a></span></li>
+                                <li class="last"><i class="icon-tags"></i> <span><a href="#">{{item.frontMatter.tags}}</a>, <a href="#">Blog</a>, <a href="#">Web page</a>, <a href="#">Clean</a></span></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p style="text-align: justify-all">
+                                {{item.preview | raw}}
+                            </p>
+                            <a href="{{item.url}}"><button class="btn btn btn-success" type="button">Read more</button></a>
+                        </div>
+                    </div>
+                </article>
+                {%  endfor %}
                 <!-- start article 1 -->
                 <article class="blog-post">
                     <div class="tooltip-demo headline">

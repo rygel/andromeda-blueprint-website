@@ -45,9 +45,14 @@ public class PippoApplication extends Application {
         // To have trailing slashes redirected to the non-slash version.
         ANY("/.*", new TrailingSlashHandler(false));
 
-        // send 'Hello World' as response
+        // Send the index page
         GET("/", routeContext -> {
             routeContext.render("index", globalContext);
+        });
+
+        // send about page
+        GET("/about", routeContext -> {
+            routeContext.render("about", globalContext);
         });
 
         ContactRouteConfiguration contactConfiguration = new ContactRouteConfiguration("/contact", "contact",

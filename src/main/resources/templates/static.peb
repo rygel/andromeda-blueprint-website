@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="span8">
                         <h3><i class="m-icon-big-swapright m-icon-white"></i> {{ fragment.title }}</h3>
-                        <p>{{ fragment.frontMAtter.subtitle }}</p>
+                        <p>{{ fragment.frontMatter.subtitle }}</p>
                     </div>
                     <div class="span4">
                         <div class="input-append">

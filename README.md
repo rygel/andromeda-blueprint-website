@@ -30,17 +30,19 @@ The following list describes the features of Pippo, as well as the Andromeda ext
 #### Fragments
 - [x] Using fragments for static pages on root, e.g. for /privacy_policy and /legal_disclosure .
 - [ ] Blog
+    - [x] Basic blog functionality
     - [ ] Categories
     - [ ] Tags
     - [ ] Database
 - [ ] Articles (Products and Services)
+    - [ ] Basic articles functionality
     - [ ] Categories
     - [ ] Tags
     - [ ] Database
 - [ ] I18N
 - [ ] Dynamic context
 - [ ] Full-text search via Lucene
-- [ ] Database
+- [ ] Pagination
 
 #### Pippo Contact Route
 - [ ] Email sending. Due to the sensitivity of the matter: Bring your own config! Also, never check your mail configuration into public git!
