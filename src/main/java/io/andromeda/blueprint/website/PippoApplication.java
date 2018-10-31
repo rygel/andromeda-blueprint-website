@@ -6,6 +6,11 @@ import io.andromeda.fragments.Utilities;
 import io.andromeda.fragments.types.RouteType;
 import io.andromeda.pippo.routes.ContactRoute;
 import io.andromeda.pippo.routes.ContactRouteConfiguration;
+import io.andromeda.pippo.routes.fields.EmailField;
+import io.andromeda.pippo.routes.fields.Field;
+import io.andromeda.pippo.routes.fields.FullNameField;
+import io.andromeda.pippo.routes.fields.MessageField;
+import io.andromeda.pippo.routes.fields.SubjectField;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ro.pippo.core.Application;
@@ -14,7 +19,9 @@ import ro.pippo.core.RuntimeMode;
 import ro.pippo.core.route.TrailingSlashHandler;
 
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -59,8 +66,13 @@ public class PippoApplication extends Application {
                 "Contact", "Andromeda Website Blueprint Contact Form",
                 "info@blueprint.andromeda.io", "Andromeda Website Blueprint",
                 "info@blueprint.andromeda.io");
-        contactConfiguration.setHasSubject(true);
-        addRouteGroup(new ContactRoute(contactConfiguration, globalContext));
+        List<Field> fields = new ArrayList<>();
+        fields.add(new FullNameField(false));
+        fields.add(new EmailField(true));
+        fields.add(new SubjectField(false));
+        fields.add(new MessageField(false));
+        //fields.add(new GDPRCheckBox(true));
+        addRouteGroup(new ContactRoute(contactConfiguration, fields, globalContext));
 
         String currentPath = System.getProperty("user.dir");
         Configuration rootConfiguration  = new Configuration("root", "/",

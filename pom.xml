@@ -36,14 +36,14 @@
         <andromeda.domain_name>blueprint.andromeda.io</andromeda.domain_name>
         <andromeda.application_title>Andromeda Website Blueprint</andromeda.application_title>
         <andromeda.info_email>info@blueprint.andromeda.io</andromeda.info_email>
-        <andromeda.last_update>17.04.2018</andromeda.last_update>
+        <andromeda.last_update>31.10.2018</andromeda.last_update>
         <andromeda.copyright_startyear>2018</andromeda.copyright_startyear>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <pippo.version>1.8.0</pippo.version>
-        <fragments.version>0.0.21</fragments.version>
-        <pippo-contact-route.version>1.0.3</pippo-contact-route.version>
+        <pippo.version>1.11.0</pippo.version>
+        <fragments.version>0.0.22</fragments.version>
+        <pippo-contact-route.version>2.0.1</pippo-contact-route.version>
         <slf4j.version>1.7.25</slf4j.version>
         <main.class>io.andromeda.blueprint.website.PippoLauncher</main.class>
     </properties>
